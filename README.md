@@ -1,7 +1,5 @@
 ## Welcome to the Undefined Computer Club
 
-More to come soon...# Undefined Computer Club
-
 🚀 **A space for developers to connect, learn, and build together.**
 
 ## 📖 About the Club
