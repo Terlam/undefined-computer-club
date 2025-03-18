@@ -6,61 +6,15 @@
     <title>Members - Undefined Computer Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .card  h1  {
-    font-size: 2em;
-      color: black;
-      font-weight: 600;
-}
-.card{
-    margin-top: 3em;
-    display: flex;
-    width:  35em;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  box-shadow: 0px 0px 3px black;
-   border-radius: 10px;
-   padding-bottom: 0.8em;
-   margin-bottom: 3em;
-   background-color: #fff;
-    
-}
-@media(max-width:375px){
-    .card{
-        width: 22em;
-    }
-}
-.card img{
-    width: 7em;
-    clip-path: circle();
-}
-.card img:hover{
-    cursor: pointer;
-    transition: 250ms ease-in;
-    filter: brightness(0.5);
-    scale: 1.1;
-}
-.connections{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5em;
-    
-}
-.connections p{
-    color: blue;
-    padding: 0.2em;
-    
-}
-.connections p:hover{
-    cursor: pointer;
-}
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5em;
-}
+               @keyframes animate{
+        50%{
+          opacity: 0;
+        }
+      }
+      .animate-blink{
+        animation: animate 0.8s infinite;
+      }
+
     </style>
   </head>
   <body class="bg-gray-100 text-gray-900">
@@ -140,20 +94,37 @@
           </div>
         </div>
         
-        <div class="card">
-          <img class="profile" src="assets/images/haruna_githubdp.png" alt="">
-          <div>
-              <div class="name   "   >
-                  <h1>Kakooza Harunah</h1>
-              </div>
-              <p  style="color: rgb(83, 83, 83);"  >Front End Web Developer & Graphic Desinger</p>
-              <div class="connections ">
-                  <p >  <a style="text-decoration: none; color: blue;  " href="https://github.com/devharunah">Github</a></p>
-                  <p style="color: black"  >|</p>
-                  <p >  <a  style="color: blue; text-decoration: none;  "   href="https://www.linkedin.com/in/kakooza-harunah-701882350/">Linkdin</a>  </p>
-              </div>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-4  text-center">
+          <img  
+            src="/undefined-computer-club/assets/images/haruna_githubdp.png"
+            alt="John Doe"
+            class="w-24 h-24 rounded-full thumb_nail  mx-auto mb-4  hover:scale-105 hover:cursor-pointer  transition duration-500"  "
+          />
+          <div style="background: rgba(0, 0, 0, 0.8);"  id="modal" class="hidden fixed inset-0  opacity-100   flex items-center justify-center z-50 "  >
+            <img  id="full_image"  class="max-w-full rounded-md max-h-[80vh]  opacity-100  shadow-lg transition duration-300 scale-0 z-50 " src=" " alt="">
           </div>
-      </div>
+          <div   class="flex  justify-center items-center "   >
+            <h2 id="text"  class="text-2xl font-bold" ></h2><span  class="animate-blink " >|</span>
+            <p class="text-gray-600">
+          </div>
+            Front end web Developer & Graphic Designer
+          </p>
+          <div class="mt-4">
+            <a
+              href="https://github.com/devharunah"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+              >GitHub</a
+            >
+            |
+            <a
+              href="https://www.linkedin.com/in/kakooza-harunah-b8286b352/"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
   </div>
         <!-- Add your profile card above this line  -->
         <!-- Leave some space for the next dev to do the same -->
@@ -185,4 +156,6 @@
       <p>&copy; 2025 Undefined Computer Club. All rights reserved.</p>
     </footer>
   </body>
+  <script    src="./undefined-computer-club/assets/script.js"    >
+  </script>
 </html>
